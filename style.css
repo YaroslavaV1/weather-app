@@ -92,3 +92,10 @@ ul {
 #spacing {
   gap: 8px;
 }
+#code-link {
+  margin-top: 10px;
+  margin-left: 70px;
+}
+#open-source-link {
+  text-decoration: none;
+}
