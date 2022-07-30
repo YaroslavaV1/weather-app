@@ -1,0 +1,94 @@
+.card {
+  margin-top: 50px;
+  max-width: 500px;
+  border-radius: 0px;
+  padding: 15px;
+}
+#weather-emoji {
+  font-size: 35px;
+}
+#temperature-number {
+  margin: 0px;
+}
+#temperature {
+  background-color: rgb(237, 237, 237);
+  text-align: center;
+  color: rgb(98, 98, 98);
+}
+#days {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: rgb(98, 98, 98);
+}
+#emoji {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  color: rgb(98, 98, 98);
+}
+h1 {
+  font-weight: bold;
+  color: rgb(98, 98, 98);
+}
+h2 {
+  font-weight: bold;
+  color: rgb(98, 98, 98);
+}
+#search-button {
+  color: white;
+  background-color: rgb(32, 32, 255);
+  border-color: rgb(32, 32, 255);
+  border-radius: 4px;
+}
+#current-button {
+  color: white;
+  background-color: rgb(23, 189, 5);
+  border-color: rgb(23, 189, 5);
+  border-radius: 4px;
+}
+.group {
+  margin: 12px;
+}
+.city {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 4px;
+  height: 60px;
+}
+#input-city {
+  flex: 1;
+}
+#cel {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: top;
+}
+#fahr {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: top;
+}
+#cel:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+#fahr:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  margin-left: 0px;
+  color: rgb(193, 193, 193);
+  padding-left: 0%;
+}
+#spacing {
+  gap: 8px;
+}
