@@ -10,7 +10,7 @@
 #temperature-number {
   margin: 0px;
 }
-#temperature {
+#temperature-row {
   background-color: rgb(237, 237, 237);
   text-align: center;
   color: rgb(98, 98, 98);
@@ -66,12 +66,16 @@ h2 {
   font-size: 16px;
   line-height: 24px;
   vertical-align: top;
+  text-decoration: none;
+  color: black;
 }
 #fahr {
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
   vertical-align: top;
+  text-decoration: none;
+  color: black;
 }
 #cel:hover {
   cursor: pointer;

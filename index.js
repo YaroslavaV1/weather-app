@@ -33,6 +33,7 @@ function displayWeatherCondition(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  celsiusTemperature = response.data.main.temp;
 }
 
 function search(event) {
@@ -62,4 +63,26 @@ function searchDefault(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+
+function showFahrTemperature(event) {
+  event.preventDefault;
+  let temperatureElement = document.querySelector("#temperature-number");
+  let fahrTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrTemperature);
+}
+
+function showCelTemperature(event) {
+  event.preventDefault;
+  let temperatureElement = document.querySelector("#temperature-number");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let fahrLink = document.querySelector("#fahr");
+fahrLink.addEventListener("click", showFahrTemperature);
+
+let celLink = document.querySelector("#cel");
+celLink.addEventListener("click", showCelTemperature);
+
+let celsiusTemperature = null;
+
 searchDefault("New York");
