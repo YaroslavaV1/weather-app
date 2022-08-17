@@ -103,3 +103,7 @@ ul {
 #open-source-link {
   text-decoration: none;
 }
+.weather-forecast-temp-min {
+  color: grey;
+  padding-left: 4px;
+}
